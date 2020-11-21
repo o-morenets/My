@@ -1,8 +1,3 @@
-/*
- * Copyright 2007-2020 Thomson Reuters Global Resources. All rights reserved. Proprietary and confidential information of TRGR.
- * Disclosure, use, or reproduction without the written authorisation of TRGR is prohibited. : Drink.java 100473
- * 10-Nov-20 15:08:53Z Oleksii_Morenets $
- */
 
 package stackOverflow.threadWater;
 
