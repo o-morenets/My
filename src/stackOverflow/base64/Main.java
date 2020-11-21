@@ -6,6 +6,7 @@
 
 package stackOverflow.base64;
 
+import java.util.ArrayList;
 import java.util.Base64;
 
 public class Main {
@@ -29,5 +30,8 @@ public class Main {
         String decoded = new String(decode(encoded));
         System.out.println(encoded);
         System.out.println(decoded);
+
+        ArrayList<Integer> integerArrayList = new ArrayList<>();
+        new ArrayList<>(integerArrayList);
     }
 }
