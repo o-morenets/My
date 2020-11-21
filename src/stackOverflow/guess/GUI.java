@@ -21,8 +21,8 @@ public class GUI extends Random0100 {
     GUI() {
 
         URL iconURL = getClass().getResource("question.png");
-        ImageIcon icon = new ImageIcon(iconURL);
-        this.frame.setIconImage(icon.getImage());
+//        ImageIcon icon = new ImageIcon(iconURL);
+//        this.frame.setIconImage(icon.getImage());
         this.panel.add(this.label);
         this.panel.add(this.pole);
         this.panel.add(this.button);
@@ -53,7 +53,7 @@ public class GUI extends Random0100 {
 
 class Random0100 {
     int guess = (int) (Math.random() * 100);
-    int counter;
+    static int counter;
 
     Random0100() {
         System.out.println("Подсказка: " + this.guess);

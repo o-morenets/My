@@ -16,8 +16,8 @@ public class Win extends GUI {
 
     Win() {
         URL iconURL = getClass().getResource("question.png");
-        ImageIcon icon = new ImageIcon(iconURL);
-        this.frame.setIconImage(icon.getImage());
+//        ImageIcon icon = new ImageIcon(iconURL);
+//        this.frame.setIconImage(icon.getImage());
 
         this.panel.add(this.text);
         this.panel.add(this.text2);

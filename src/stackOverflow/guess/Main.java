@@ -2,5 +2,7 @@
 package stackOverflow.guess;
 
 public class Main {
-    new
+    public static void main(String[] args) {
+        new GUI();
+    }
 }
