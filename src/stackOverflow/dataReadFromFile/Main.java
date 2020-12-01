@@ -10,13 +10,16 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Main {
-    static String[] name;
-    static int[] score;
+    static String[] name = new String[100];
+    static int[] score = new int[100];
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        new Main().readFile();
+        System.out.println(Arrays.toString(name));
+        System.out.println(Arrays.toString(score));
     }
 
     void readFile() throws IOException
@@ -32,6 +35,7 @@ public class Main {
                 String[] parts = temp.split(";");
                 Main.name[index] = parts[0];
                 Main.score[index] = Integer.parseInt(parts[1]);
+                index++;
             }
         }
     }
