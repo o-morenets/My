@@ -13,7 +13,7 @@ public class Main {
     public static void setEast(JFrame fr) {
         JPanel myPanel2 = new JPanel();
         ArrayList<JButton> masB = new ArrayList<>();
-        myPanel2.setLayout(new GridLayout(16,1));
+        myPanel2.setLayout(new GridLayout(6,3));
 
         for(int i = 0; i < 8; i++) {
             masB.add(new JButton("Кнопка" + i));
