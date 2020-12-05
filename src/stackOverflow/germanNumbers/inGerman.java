@@ -1,9 +1,3 @@
-/*
- * Copyright 2007-2020 Thomson Reuters Global Resources. All rights reserved. Proprietary and confidential information of TRGR.
- * Disclosure, use, or reproduction without the written authorisation of TRGR is prohibited. : inGerman.java 100473
- * 02-Dec-20 17:53:56Z Oleksii_Morenets $
- */
-
 package stackOverflow.germanNumbers;
 
 public class inGerman {
