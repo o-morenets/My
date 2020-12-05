@@ -22,9 +22,7 @@ public class DrawingOne extends JFrame {
     public DrawComponent c;
 
     public static void main(String[] args) {
-        System.out.println('\u201d');
-
-        //        new DrawingOne();
+        new DrawingOne();
     }
 
     public DrawingOne() {
