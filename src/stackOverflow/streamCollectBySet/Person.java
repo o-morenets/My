@@ -72,6 +72,7 @@ class Item {
 
         //...
 
+/*
         Map<Item, Long> count = persons.stream()
                 .map(person -> {
                     Map<Item, Person> itemPersonMap = new HashMap<>();
@@ -83,5 +84,12 @@ class Item {
                 .collect(Collectors.groupingBy(Map.Entry::getKey, Collectors.counting()));
 
         System.out.println(count);
+*/
+
+        Map<String, Long> collect = persons.stream()
+                .flatMap(person -> person.getItems().stream())
+                .collect(Collectors.groupingBy(Item::getName, Collectors.counting()));
+
+        System.out.println(collect);
     }
 }
