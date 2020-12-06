@@ -1,4 +1,4 @@
-package stackOverflow.sortByOcurrence;
+package stackOverflow.sortByOccurrences;
 
 import java.util.Arrays;
 import java.util.List;
