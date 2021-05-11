@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 public class Listener implements MouseListener, MouseMotionListener
 {
-	private ArrayList<B> bs;
 	private A a;
 	private boolean b_isBeingDragged;
 	private int DistanceToTheEndX;
@@ -17,7 +16,6 @@ public class Listener implements MouseListener, MouseMotionListener
 	public Listener(A a)
 	{
 		this.a = a;
-		this.bs = a.Bs;
 		b_isBeingDragged = false;
 		DistanceToTheEndX = DistanceToTheEndY = 0;
 	}
@@ -32,7 +30,7 @@ public class Listener implements MouseListener, MouseMotionListener
 	{
 		if (e.getButton() == MouseEvent.BUTTON1)
 		{
-			for (B s : bs)
+			for (B s : a.Bs)
 			{
 				if (e.getX() >= s.x && e.getX() <= (s.x + s.width) &&
 						e.getY() >= s.y && e.getY() <= (s.y + s.height))
